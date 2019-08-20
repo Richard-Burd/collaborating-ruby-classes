@@ -2,6 +2,7 @@
 # This is a good way to mess with code when you don't have your IDE handy.
 
 require_relative('./dog.rb')
+require_relative('./owner.rb')
 
 fido = Dog.new("Fido")
 odie = Dog.new("Odie")
