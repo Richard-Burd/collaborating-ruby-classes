@@ -6,7 +6,7 @@ require_relative('./bird.rb')
 require_relative('./owner.rb')
 
 # Use this to install any Ruby gems you need.
-# require_relative('./gems.rb') 
+require_relative('./gems.rb') 
 
 # require_relative('./tests/create_three_dogs.rb')
 # create_three_dogs_test
@@ -32,6 +32,8 @@ puts fido.dog_leash
 puts fido.birth_certificate
 
 pet_bird_from_hash = {name: "Tweety", owner: "Titus"}
+
+binding.pry
 
 tweety = Bird.new(pet_bird_from_hash)
 puts "A new bird named #{tweety.name} owned by #{tweety.owner} was created from a hash"
